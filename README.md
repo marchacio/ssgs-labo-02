@@ -2,29 +2,75 @@
 
 Questo progetto fornisce una base per una semplice Command-Line Interface (CLI) Node.js che offre diverse utilità per la manipolazione di stringhe.
 
-## Nota Importante per lo Studente - Setup Iniziale del Progetto
-
-Benvenuto/a a `labo-string`!
-
-Questo repository è un **template di partenza** per il tuo laboratorio valutato. Come avrai modo di leggere nelle istruzioni del laboratorio, una parte fondamentale del tuo lavoro iniziale (Esercizio 1) consisterà nell'analizzare attentamente la struttura e la configurazione corrente di questo progetto.
-
-**Potresti notare che alcuni aspetti della configurazione iniziale – inclusa questa stessa documentazione (`README.md`), il file `package.json` e la gestione dei file da ignorare (`.gitignore`) – sono stati volutamente lasciati incompleti o potrebbero non seguire tutte le best practice per un progetto Node.js.**
-
-Il tuo primo compito sarà proprio quello di identificare queste aree di miglioramento e apportare le necessarie correzioni e completamenti, come dettagliato nelle istruzioni del laboratorio, per portare il progetto a uno standard qualitativo superiore.
-
-Buona analisi e buon lavoro!
-
-## Funzionalità Principali (Previste)
+## Funzionalità Principali
 
 * Inversione di una stringa.
 * Verifica se una stringa è palindroma.
 * Troncamento di una stringa a una lunghezza massima specificata.
 * Conteggio delle occorrenze di ciascun carattere in una stringa.
 
+## Requisiti
+
+- [Node.js](https://nodejs.org/) (versione 16 o superiore)
+- [npm](https://www.npmjs.com/) (incluso con Node.js)
+
 ## Installazione e Avvio
 
-*(Questa sezione dovrà essere completata dallo studente come parte dell'Esercizio 1, includendo i comandi per installare le dipendenze ed eseguire l'applicazione e i test).*
+Clona il repository e installa le dipendenze:
 
----
+```bash
+git clone https://github.com/marchacio/ssgs-labo-02
+cd ssgs-labo-02
+npm install
+```
 
-*Suggerimento: Presta particolare attenzione ai requisiti dell'Esercizio 1 del laboratorio per completare e correggere questo README e gli altri file di configurazione.*
+## Utilizzo
+
+Esegui la CLI tramite il comando:
+
+```bash
+npm start <comando> <argomenti>
+```
+
+Per una lista completa dei comandi e delle opzioni disponibili, puoi eseguire:
+
+```bash
+npm start
+```
+
+### Comandi Disponibili
+
+- `1: Inverti Stringa`: Inverte la stringa fornita.
+- `2: Controlla Palindromo`: Verifica se la stringa è palindroma.
+- `3: Tronca Stringa`: Tronca la stringa alla lunghezza specificata.
+- `4: Conta Caratteri`: Conta le occorrenze di ciascun carattere nella stringa.
+
+Esempi:
+
+```bash
+npm start 1 "prova"
+npm start 2 "prova"
+npm start 3 "prova" 2
+npm start 4 "prova"
+```
+
+## Esecuzione dei Test
+
+Per eseguire i test automatici:
+
+```bash
+npm test
+```
+
+## Struttura del Progetto
+
+- `src/`: Codice sorgente della CLI e delle utilità.
+- `test/`: Test automatici.
+
+## Contributi
+
+Contributi, segnalazioni di bug e suggerimenti sono benvenuti tramite pull request o issue.
+
+## Licenza
+
+Questo progetto è distribuito sotto licenza MIT.

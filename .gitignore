@@ -17,3 +17,19 @@ dist/
 .coverage
 .pytest_cache/
 htmlcov/
+
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# Optional npm cache directory
+.npm
+
+# Logs
+logs
+*.log
+
+# Coverage directory
+coverage/
