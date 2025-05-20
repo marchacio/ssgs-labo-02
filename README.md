@@ -62,10 +62,28 @@ Per eseguire i test automatici:
 npm test
 ```
 
+I test sono implementati con Jest. L'esecuzione dei test produce anche un report di code coverage.
+
+### Report di Coverage
+
+Dopo aver eseguito `npm test`, viene generata una cartella `coverage/` che contiene il report dettagliato della copertura del codice, incluso un report HTML visualizzabile in `coverage/lcov-report/index.html`.
+
+## Integrazione Continua (GitHub Actions)
+
+Il progetto include una configurazione di GitHub Actions che esegue automaticamente:
+
+- Installazione delle dipendenze
+- Esecuzione dei test con Jest e generazione del report di coverage
+- Caricamento del report HTML di coverage come artefatto scaricabile dal workflow
+
+Il workflow si attiva automaticamente su push, pull request e manualmente tramite l'interfaccia di GitHub.
+
 ## Struttura del Progetto
 
 - `src/`: Codice sorgente della CLI e delle utilità.
 - `test/`: Test automatici.
+- `coverage/`: Report di coverage generati da Jest.
+- `.github/workflows/ci.yml`: Workflow di GitHub Actions per CI/CD.
 
 ## Contributi
 
