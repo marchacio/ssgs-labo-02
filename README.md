@@ -48,10 +48,10 @@ npm start
 Esempi:
 
 ```bash
-npm start 1 "ciao"
-npm start 2 "radar"
-npm start 3 "ciao" 2
-npm start 4 "banana"
+npm start 1 "prova"
+npm start 2 "prova"
+npm start 3 "prova" 2
+npm start 4 "prova"
 ```
 
 ## Esecuzione dei Test
